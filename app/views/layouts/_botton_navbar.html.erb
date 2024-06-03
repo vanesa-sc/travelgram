@@ -1,0 +1,19 @@
+ <nav class="navbar">
+    <%= link_to posts_path, class: 'nav-link' do %>
+      <i class="fas fa-home"></i>
+      <span class="nav-text">Home</span>
+    <% end %>
+
+    <a href="#" class="nav-link">
+      <i class="fas fa-search"></i>
+      <span class="nav-text">Search</span>
+    </a>
+    <%= link_to new_post_path, class: 'nav-link' do %>
+      <i class="fa-solid fa-plus"></i>
+      <span class="nav-text">Add</span>
+    <% end %>
+    <a href="#" class="nav-link">
+      <i class="fas fa-user"></i>
+      <span class="nav-text">Profile</span>
+    </a>
+  </nav>

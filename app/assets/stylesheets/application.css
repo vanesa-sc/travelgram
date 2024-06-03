@@ -1,0 +1,130 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ body{
+	background: #f2f2f2;
+  font-family: helvetica, arial, sans-serif;
+}
+.card{
+	margin: 20px auto 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  width: 100%;
+  max-width: 320px;
+  background: white;
+  font-size: 12px;
+}
+.card-header{
+	padding: 10px;
+  display: flex;
+  align-items: center;
+
+
+}
+.user-image{
+  font-weight: bold;
+  margin-left: 10px;
+	width: 40px;
+  border-radius: 50%;
+	overflow: hidden;
+}
+
+.user-name{
+	font-weight:bold;
+  margin-left: 10px;
+
+}
+.time{
+	color: #ccc;
+  text-align: right;
+  width: 100%;
+}
+
+.card-content{
+  padding: 10px;
+}
+
+.likes{
+  font-weight: bold;
+}
+
+.hashtag{
+  color: #4a5279;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+hr{
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.card-actions{
+  padding: 10px;
+  display: flex;
+}
+
+.comments-input{
+  margin-left: 10px;
+  border: none;
+  width: 100%;
+}
+
+
+.salmon{
+  background-color: rgb(255, 174, 164);
+}
+
+
+.navbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(255, 174, 164);;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  flex: 1;
+}
+
+.nav-link:hover {
+  background-color: #444;
+}
+
+.nav-link i {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.nav-text {
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .nav-text {
+    display: none;
+  }
+}

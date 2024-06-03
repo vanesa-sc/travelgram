@@ -1,0 +1,21 @@
+<div class="card">
+    <div class="card-header">
+      <img class="user-image" src="">
+      <p class="user-name"> 'user.name'</p>
+      <p class="time">1h</p>
+    </div>
+    <div class="card-image">
+      <%=@post.photo %>
+    </div>
+    <div class="card-content">
+      <p class= "likes">1 likes </p>
+      <%= <p>@post.description  </p> %>
+      <p><a href="#">title</a></p>
+      <hr>
+    </div>
+    <div class="card-actions">
+      <a href="#" class= "action-icons"><i class="fa fa-heart-o"></i></a>
+      <input class="comments-input" type="text" placeholder="Add a comment..." />
+      <a href="#" class="action-icons"><i class="fa fa-ellipsis-h"></i></a>
+    </div>
+  </div>

@@ -1,0 +1,24 @@
+<h1>Posts#index</h1>
+<p>Find me in app/views/posts/index.html.erb</p>
+
+<% @posts.each do |post| %>
+  <div class="card-header">
+    <img class="user-image" src="">
+    <p class="user-name"><%= post.title %></p>
+    <p class="time">1h</p>
+  </div>
+  <div class="card-image">
+    <%= image_tag post.photo.url if post.photo.attached? %>
+  </div>
+  <div class="card-content">
+    <p class="likes">1 like</p>
+    <p><%= post.description %></p>
+    <p><a href="#">title</a></p>
+    <hr>
+  </div>
+  <div class="card-actions">
+    <a href="#" class="action-icons"><i class="fa fa-heart-o"></i></a>
+    <input class="comments-input" type="text" placeholder="Add a comment..." />
+    <a href="#" class="action-icons"><i class="fa fa-ellipsis-h"></i></a>
+  </div>
+<% end %>
